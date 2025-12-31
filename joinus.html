@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Food Saver</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="FSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="navBar">
+            <div class="logo-container">
+                <span class="logo">Food Saver!</span>
+                <div class="logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html" class="nav-link">Home</a></li>
+                <li><a href="abtus.html" class="nav-link">About Us</a></li>
+                <li><a href="objectives.html" class="nav-link">Objective</a></li>
+                <li><a href="contactus.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="#" class="btn donate-btn">Donate Food</a>
+                <a href="#" class="btn request-btn">Request Food</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="register-hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="register-hero-content">
+            <h1>Join Our Mission</h1>
+            <p>Be part of the solution to reduce food waste and fight hunger</p>
+            <div class="breadcrumb">
+                <a href="homepage.html">Home</a> / <span>Join Us</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Registration Options Section -->
+    <section class="registration-options">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">How Would You Like to Join?</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Choose the option that best describes how you'd like to participate in our mission</p>
+            </div>
+            <div class="options-container">
+                <div class="option-card" id="donorOption">
+                    <div class="option-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Join as a Food Donor</h3>
+                    <p>If you're a restaurant, hotel, caterer, grocery store, or individual with surplus food, join us as a donor to redistribute your excess to those in need.</p>
+                    <ul class="option-benefits">
+                        <li><i class="fas fa-check"></i> Reduce your environmental impact</li>
+                        <li><i class="fas fa-check"></i> Receive tax benefits for donations</li>
+                        <li><i class="fas fa-check"></i> Simple and convenient donation process</li>
+                        <li><i class="fas fa-check"></i> Make a meaningful difference in your community</li>
+                    </ul>
+                    <button class="btn primary-btn donor-select-btn">Register as Donor</button>
+                </div>
+                <div class="option-card" id="recipientOption">
+                    <div class="option-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Join as a Recipient</h3>
+                    <p>If you represent an NGO, food bank, community kitchen, or other organization serving those in need, register to receive food donations.</p>
+                    <ul class="option-benefits">
+                        <li><i class="fas fa-check"></i> Access to nutritious food for your community</li>
+                        <li><i class="fas fa-check"></i> Reduce your operational food costs</li>
+                        <li><i class="fas fa-check"></i> Connect with a network of food donors</li>
+                        <li><i class="fas fa-check"></i> Support your mission more effectively</li>
+                    </ul>
+                    <button class="btn primary-btn recipient-select-btn">Register as Recipient</button>
+                </div>
+                <div class="option-card" id="volunteerOption">
+                    <div class="option-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Join as a Volunteer</h3>
+                    <p>If you're an individual looking to contribute your time and skills to our mission, join our volunteer network.</p>
+                    <ul class="option-benefits">
+                        <li><i class="fas fa-check"></i> Make a direct impact in your community</li>
+                        <li><i class="fas fa-check"></i> Develop new skills and gain experience</li>
+                        <li><i class="fas fa-check"></i> Connect with like-minded individuals</li>
+                        <li><i class="fas fa-check"></i> Flexible volunteering opportunities</li>
+                    </ul>
+                    <button class="btn primary-btn volunteer-select-btn">Register as Volunteer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Registration Forms Section -->
+    <section class="registration-forms">
+        <div class="section-container">
+            <!-- Donor Registration Form -->
+            <div class="form-container" id="donorFormContainer">
+                <div class="section-header">
+                    <h2 class="section-title">Donor Registration</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <form class="registration-form" id="donorForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="donorName">Organization/Individual Name</label>
+                            <input type="text" id="donorName" name="donorName" placeholder="Your name or organization name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorType">Type of Donor</label>
+                            <select id="donorType" name="donorType" required>
+                                <option value="">Select donor type</option>
+                                <option value="restaurant">Restaurant</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="caterer">Caterer</option>
+                                <option value="grocery">Grocery Store</option>
+                                <option value="individual">Individual</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="donorEmail">Email Address</label>
+                            <input type="email" id="donorEmail" name="donorEmail" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorPhone">Phone Number</label>
+                            <input type="tel" id="donorPhone" name="donorPhone" placeholder="+91 98765 43210" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorAddress">Address</label>
+                        <input type="text" id="donorAddress" name="donorAddress" placeholder="Your complete address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorCity">City</label>
+                        <input type="text" id="donorCity" name="donorCity" placeholder="Your city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorFoodType">Types of Food Typically Available</label>
+                        <textarea id="donorFoodType" name="donorFoodType" rows="3" placeholder="Describe the types of food you typically have available for donation" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorFrequency">Frequency of Donations</label>
+                        <select id="donorFrequency" name="donorFrequency" required>
+                            <option value="">Select frequency</option>
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="occasionally">Occasionally</option>
+                            <option value="seasonal">Seasonal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="donorTerms" name="donorTerms" required>
+                            I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn primary-btn">Register as Donor</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Recipient Registration Form -->
+            <div class="form-container hidden" id="recipientFormContainer">
+                <div class="section-header">
+                    <h2 class="section-title">Recipient Registration</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <form class="registration-form" id="recipientForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="recipientOrg">Organization Name</label>
+                            <input type="text" id="recipientOrg" name="recipientOrg" placeholder="Your organization name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipientType">Type of Organization</label>
+                            <select id="recipientType" name="recipientType" required>
+                                <option value="">Select organization type</option>
+                                <option value="ngo">NGO</option>
+                                <option value="foodbank">Food Bank</option>
+                                <option value="shelter">Homeless Shelter</option>
+                                <option value="community">Community Center</option>
+                                <option value="school">School/College</option>
+                                <option value="religious">Religious Institution</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="recipientEmail">Email Address</label>
+                            <input type="email" id="recipientEmail" name="recipientEmail" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipientPhone">Phone Number</label>
+                            <input type="tel" id="recipientPhone" name="recipientPhone" placeholder="+91 98765 43210" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipientAddress">Address</label>
+                        <input type="text" id="recipientAddress" name="recipientAddress" placeholder="Your complete address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipientCity">City</label>
+                        <input type="text" id="recipientCity" name="recipientCity" placeholder="Your city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipientPeople">Number of People Served</label>
+                        <input type="number" id="recipientPeople" name="recipientPeople" placeholder="Approximate number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipientFoodNeeds">Food Requirements</label>
+                        <textarea id="recipientFoodNeeds" name="recipientFoodNeeds" rows="3" placeholder="Describe the types of food you typically need" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="recipientTerms" name="recipientTerms" required>
+                            I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn primary-btn">Register as Recipient</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Volunteer Registration Form -->
+            <div class="form-container hidden" id="volunteerFormContainer">
+                <div class="section-header">
+                    <h2 class="section-title">Volunteer Registration</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <form class="registration-form" id="volunteerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volunteerName">Full Name</label>
+                            <input type="text" id="volunteerName" name="volunteerName" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteerEmail">Email Address</label>
+                            <input type="email" id="volunteerEmail" name="volunteerEmail" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volunteerPhone">Phone Number</label>
+                            <input type="tel" id="volunteerPhone" name="volunteerPhone" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteerAge">Age</label>
+                            <input type="number" id="volunteerAge" name="volunteerAge" placeholder="Your age" min="18" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteerAddress">Address</label>
+                        <input type="text" id="volunteerAddress" name="volunteerAddress" placeholder="Your complete address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteerCity">City</label>
+                        <input type="text" id="volunteerCity" name="volunteerCity" placeholder="Your city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteerSkills">Skills/Interests</label>
+                        <textarea id="volunteerSkills" name="volunteerSkills" rows="3" placeholder="Describe your skills, interests, or how you'd like to help" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteerAvailability">Availability</label>
+                        <select id="volunteerAvailability" name="volunteerAvailability" required>
+                            <option value="">Select availability</option>
+                            <option value="weekdays">Weekdays</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="both">Both Weekdays and Weekends</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="volunteerTerms" name="volunteerTerms" required>
+                            I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn primary-btn">Register as Volunteer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Why Join Food Saver?</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmental Impact</h3>
+                    <p>Join us in reducing the 1.3 billion tons of food wasted globally each year, significantly lowering greenhouse gas emissions.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Social Impact</h3>
+                    <p>Help us fight hunger by providing nutritious meals to the 828 million people affected by food insecurity worldwide.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Building</h3>
+                    <p>Be part of a growing community of passionate individuals and organizations working towards a common goal.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Economic Benefits</h3>
+                    <p>Reduce costs associated with food waste while creating value from surplus resources through redistribution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Hear from those who have joined our mission</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Joining Food Saver as a restaurant donor has been incredibly rewarding. We've reduced our food waste by 70% and are making a real difference in our community."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Restaurant Owner">
+                        <div class="author-info">
+                            <h4>Scarlet</h4>
+                            <p>Restaurant Owner, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a small NGO, we struggled to provide enough meals. Through Food Saver, we now receive regular donations that help us feed 200+ children daily."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="NGO Director">
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>NGO Director, Delhi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Volunteering with Food Saver has been a life-changing experience. I've met amazing people and seen firsthand the impact we can make together."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Volunteer">
+                        <div class="author-info">
+                            <h4>Lue Patel</h4>
+                            <p>Volunteer, Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a fee to join Food Saver?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, joining Food Saver is completely free for donors, recipients, and volunteers. We believe in removing barriers to food redistribution.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I know if my food is suitable for donation?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Edible food that is safe for consumption is generally suitable. We provide guidelines on food safety and handling to ensure all donations meet quality standards.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can individuals join as donors?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely! Individuals with surplus food from events, gatherings, or over-purchasing are welcome to join as donors.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What kind of time commitment is expected from volunteers?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer flexible volunteering opportunities. You can contribute as little as a few hours per month or as much as you'd like, based on your availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How are food donations collected and distributed?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We coordinate pickups from donors and deliveries to recipients. Our system matches donations based on location, quantity, and nutritional needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="ftr">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>Food Saver!</span>
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <p>Fighting hunger, reducing waste, and building sustainable communities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="abtus.html">About Us</a></li>
+                        <li><a href="objectives.html">Objective</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li><a href="register.html">Join as Donor</a></li>
+                        <li><a href="register.html">Join as Recipient</a></li>
+                        <li><a href="register.html">Volunteer</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Subscribe</h3>
+                    <p>Stay updated with our latest news and impact stories</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Food Saver. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
